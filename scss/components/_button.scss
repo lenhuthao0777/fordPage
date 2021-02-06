@@ -1,0 +1,23 @@
+.btnBlue {
+    @include styleButton($color-blue, $color-blue, $pd-3, $pd-2, 0px);
+    @include styleText($color-white-0, $fs-0, $fw-normal);
+    &:hover {
+        @include styleButtonHover($color-white-0, $color-blue, $color-blue);
+    }
+}
+
+.btnWhite {
+    @include styleButton($color-white-0, $color-blue, $pd-3, $pd-2, 0px);
+    @include styleText($color-blue, $fs-0, $fw-normal);
+    &:hover {
+        @include styleButtonHover($color-blue, $color-white-0, $color-blue);
+    }
+}
+
+.btnRed {
+    @include styleButton($color-red, $color-red, $pd-3, $pd-2, 0px);
+    @include styleText($color-white-0, $fs-0, $fw-normal);
+    &:hover {
+        @include styleButtonHover($color-white-0, $color-red, $color-red);
+    }
+}

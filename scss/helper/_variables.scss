@@ -1,26 +1,19 @@
 // variable color
-$color-black-0: #29303b; // default
+$color-black-0: #333333; // default
 $color-white-0: #fff; //default
-$color-red-0:#ec5252;
-$color-red-1: #521822;
-$color-red-2:#992337;
-$color-purple: #6e1a52;
-$color-gray-1: rgba(20,23,28,.05);
-$color-gray-2: #a1a7b3;
-$color-gray-3: #cacbcc;
-$color-gray-4: #686f7a;
-$color-gray-5:#F7F8FA;
-$color-gray-6:#dedfe0;
-$color-black-light:#505763;
-$color-white-cream:#f2f3f5;
-$color-black-dark: rgba(20,23,28,.1);
-$color-yellow: #F4C150;
-$color-blue:#007791;
+$color-black-light: #6c6466;
+$color-black-1: #204d74;
+$color-blue-dark: #102b4e;
+$color-blue-light:#37a9cf;
+$color-blue: #0276b3;
+$color-gray-dark: #545352;
+$color-gray: #a7a7a7;
+$color-red: #d92e14;
 $color-trans:transparent;
 
 // variable font-size
-$fs-0: 15px; //default
-$fs-1: 13px;
+$fs-0: 16px; //default
+$fs-1: 14px;
 $fs-2: 20px;
 $fs-3: 24px;
 //Còn 1 font-size: 36px;
@@ -37,7 +30,8 @@ $border-radius: 2px;
 //variable padding
 $pd-0: 5px; //default
 $pd-1: 10px;
-$pd-2: 20px;
+$pd-2: 15px;
+$pd-3: 20px;
 
 
 //variable line-height
