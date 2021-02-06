@@ -1,0 +1,231 @@
+/** @format */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "Roboto" , "Poppins" ,sans-serif;
+  font-size: 15px;
+  color: #000;
+  background-color: #fff;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  max-width: 1440px;
+  width: 94%;
+  margin: 0 auto;
+}
+
+.btnBlue {
+  background-color: #0276b3;
+  border: 1px solid #0276b3;
+  padding: 20px 15px;
+  border-radius: 0px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.btnBlue:focus {
+  outline: 1px solid #0276b3 !important;
+  outline-offset: 5px;
+}
+
+.btnBlue:active {
+  border-color: #204d74;
+  box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+}
+
+.btnBlue:hover {
+  background-color: #fff;
+  color: #0276b3;
+  border-color: #0276b3;
+}
+
+.btnWhite {
+  background-color: #fff;
+  border: 1px solid #0276b3;
+  padding: 20px 15px;
+  border-radius: 0px;
+  color: #0276b3;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.btnWhite:focus {
+  outline: 1px solid #0276b3 !important;
+  outline-offset: 5px;
+}
+
+.btnWhite:active {
+  border-color: #204d74;
+  box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+}
+
+.btnWhite:hover {
+  background-color: #0276b3;
+  color: #fff;
+  border-color: #0276b3;
+}
+
+.btnRed {
+  background-color: #d92e14;
+  border: 1px solid #d92e14;
+  padding: 20px 15px;
+  border-radius: 0px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.btnRed:focus {
+  outline: 1px solid #0276b3 !important;
+  outline-offset: 5px;
+}
+
+.btnRed:active {
+  border-color: #204d74;
+  box-shadow: 0 0 1px 1px rgba(20, 23, 28, 0.1), 0 3px 1px 0 rgba(20, 23, 28, 0.1);
+}
+
+.btnRed:hover {
+  background-color: #fff;
+  color: #d92e14;
+  border-color: #d92e14;
+}
+
+.fordCarousel {
+  background-image: url(./../images/carousel.jpeg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 590px;
+}
+/*# sourceMappingURL=main.css.map */
