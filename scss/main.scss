@@ -9,6 +9,7 @@
 // base
 @import "./base/reset";
 @import "./base/customize";
+@import "./base/normalized";
 
 // component
 @import "./components/button";
@@ -16,6 +17,10 @@
 // layout
 @import "./layouts/header";
 @import "./layouts/carousel";
+@import "./layouts/video";
+@import "./layouts/offers";
+@import "./layouts/gallery";
+@import "./layouts/recalls";
 @import "./layouts/footer";
 @import "./layouts/banner";
 

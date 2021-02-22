@@ -1,0 +1,102 @@
+.offers {
+    .offers__content {
+        position: relative;
+        a {
+            text-decoration: none;
+        }
+        .img {
+            img {
+                width: 100%;
+                display: none;
+            }
+            .bigScreen {
+                display: block;
+            }
+        }
+        .text {
+            position: absolute;
+            top: 15%;
+            width: 100%;
+            h1 {
+                @include styleText($color-white-0, $fs-4 + 5, $fw-normal);
+                letter-spacing: 1px;
+                text-align: center;
+            }
+        }
+        .link {
+            position: absolute;
+            width: 100%;
+            bottom: 8%;
+
+            p {
+                text-align: center;
+                @include styleText ($color-white-0, $fs-0, 300);
+                line-height: 1.25;
+                text-transform: uppercase;
+                i {
+                    margin-left: 0.6rem;
+                }
+            }
+        }
+        &:hover {
+            .link {
+                .btnAngleRight {
+                    background-color: white;
+                    color: $color-blue;
+                }
+            }
+        }
+    }
+}
+
+@include responesive("large") {
+    .offers {
+        .offers__content {
+            .img {
+                .bigScreen {
+                    display: none;
+                }
+                .mediumScreen {
+                    display: block;
+                }
+            }
+            .text {
+                top: 4%;
+                h1 {
+                    font-size: $fs-4;
+                }
+            }
+        }
+    }
+}
+
+@include responesive("medium") {
+    .offers {
+        .offers__content {
+            .text {
+                top: 2%;
+                h1 {
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+}
+
+@include responesive("small") {
+    .offers {
+        .offers__content {
+            .img {
+                .mediumScreen {
+                    display: none;
+                }
+                .smallScreen {
+                    display: block;
+                }
+            }
+            .text {
+                top: 3%;
+            }
+        }
+    }
+}

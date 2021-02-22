@@ -21,3 +21,18 @@
         @include styleButtonHover($color-white-0, $color-red, $color-red);
     }
 }
+
+.btnAngleRight {
+    display: inline-block;
+    color: white;
+    height: 1.5em;
+    width: 1.5em;
+    line-height: 1.4em;
+    border-radius: 50%;
+    border: 1px solid white;
+    text-align: center;
+    &:hover {
+        background-color: white;
+        color: $color-blue;
+    }
+}

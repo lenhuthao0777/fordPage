@@ -1,0 +1,27 @@
+.recalls {
+    background-color: #f7f7f7;
+    text-align: center;
+    h1 {
+        color: $color-red;
+        font-size: 3.2rem;
+    }
+    button {
+        padding: 15px 6rem;
+    }
+}
+
+@include responesive("large") {
+    .recalls {
+        h1 {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+@include responesive("small"){
+    .recalls {
+        h1 {
+            font-size: 2rem;
+        }
+    }
+}
