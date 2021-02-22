@@ -256,7 +256,14 @@
   ]
     });
     </script>
-
+    <!-- View All button  -->
+    <!-- Bắt sự kiện thay đổi kích cỡ màn hình (để xóa nút view all khi người dùng thu nhỏ rồi phóng to màn hình lại) -->
+    <script>
+      $(window).resize(function(){
+        var sceenSize = screen.width;
+        reSizeWidown(sceenSize);
+      });
+    </script>
     <script src="./js/viewButton.js"></script>
     <script src="./js/script.js"></script>
   </body>
