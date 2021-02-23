@@ -48,6 +48,7 @@
 
 @include responesive("medium") {
     .fordVideo {
+        padding: 2rem 0;
         .fordVideo__content {
             width: 94%;
             .text {

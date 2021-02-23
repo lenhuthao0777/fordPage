@@ -316,7 +316,7 @@ table {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -596,6 +596,10 @@ table {
   }
 }
 
+.fordCarousel {
+  margin-top: 120px;
+}
+
 .fordCarousel .fordCarousel__content .item {
   position: relative;
 }
@@ -704,6 +708,9 @@ table {
 }
 
 @media screen and (max-width: 768px) {
+  .fordVideo {
+    padding: 2rem 0;
+  }
   .fordVideo .fordVideo__content {
     width: 94%;
   }
@@ -713,6 +720,10 @@ table {
   .fordVideo .fordVideo__content .text p {
     width: 96%;
   }
+}
+
+.offers {
+  padding-top: 2rem;
 }
 
 .offers .offers__content {
@@ -990,6 +1001,7 @@ table {
 }
 
 .recalls {
+  padding: 2rem 0;
   background-color: #f7f7f7;
   text-align: center;
 }
@@ -1001,6 +1013,7 @@ table {
 
 .recalls button {
   padding: 15px 6rem;
+  margin-top: 2rem;
 }
 
 @media screen and (max-width: 992px) {
