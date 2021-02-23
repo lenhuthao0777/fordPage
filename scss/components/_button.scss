@@ -30,3 +30,18 @@
     outline: none;
     transition: all 0.3s;
 }
+
+.btnAngleRight {
+    display: inline-block;
+    color: white;
+    height: 1.5em;
+    width: 1.5em;
+    line-height: 1.4em;
+    border-radius: 50%;
+    border: 1px solid white;
+    text-align: center;
+    &:hover {
+        background-color: white;
+        color: $color-blue;
+    }
+}
