@@ -49,7 +49,7 @@
                 background-color: rgba(6, 120, 188, 0.9);
                 position: absolute;
                 bottom: -2px;
-                right: 0;
+                left: 0%;
                 width: 100%;
                 padding: 5%;
                 color: $color-white-0;
@@ -61,7 +61,7 @@
                 }
                 .icon {
                     width: 20%;
-                    margin-left: 10%;
+                    margin-right: 6%;
                     text-align: center;
                 }
                 i {
@@ -96,6 +96,7 @@
         .item:nth-child(3) {
             grid-column: span 2;
             grid-row: span 2;
+            // .text {}
             .item-768 {
                 display: none;
             }

@@ -4,18 +4,26 @@ console.log(viewLessbtn);
 let viewAllbtn = document.getElementById("viewAll");
 
 function viewAll() {
-    for (var i = 0; i < item.length; i++) {
-        item[i].style.display = "block";
-        viewAllbtn.style.display = "none";
-        viewLessbtn.style.display = "block";
+    let sceenSize = document.documentElement.clientWidth;
+    if (sceenSize <= 768) {
+        for (var i = 0; i < item.length; i++) {
+            item[i].style.display = "block";
+            viewAllbtn.style.display = "none";
+            viewLessbtn.style.display = "block";
+        }
     }
 }
 
 function viewLess() {
-    for (var i = 0; i < item.length; i++) {
-        item[i].style.display = "none";
+    let sceenSize = document.documentElement.clientWidth;
+    if (sceenSize <= 768) {
+        for (var i = 0; i < item.length; i++) {
+            item[i].style.display = "none";
+            viewLessbtn.style.display = "none";
+            viewAllbtn.style.display = "block";
+        }
+    } else {
         viewLessbtn.style.display = "none";
-        viewAllbtn.style.display = "block";
     }
 }
 
