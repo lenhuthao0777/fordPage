@@ -2,15 +2,17 @@
     .fordVideo__content {
         margin: auto;
         width: 86%;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
         .text {
             text-align: center;
             h1 {
                 margin-top: 2rem;
                 margin-bottom: 1rem;
-                @include styleText($color-red, $fs-4 + 2, 500);
+                @include styleText($color-black-0, $fs-4 + 2, 500);
             }
             p {
-                @include styleText($color-red, $fs-0, $fw-normal);
+                @include styleText($color-black-0, $fs-0, $fw-normal);
                 margin: auto;
                 margin-bottom: 2rem;
                 width: 70%;
@@ -48,9 +50,10 @@
 
 @include responesive("medium") {
     .fordVideo {
-        padding: 2rem 0;
         .fordVideo__content {
             width: 94%;
+            padding-top: 0;
+            padding-bottom: 1rem;
             .text {
                 h1 {
                     font-size: 30px;
