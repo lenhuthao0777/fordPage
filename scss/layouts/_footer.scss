@@ -1,5 +1,4 @@
 .footer {
-    margin-top: 300px;
     .footer__disclosures {
         .footer__disclosures--btn {
             padding: 30px 20px;
@@ -285,7 +284,7 @@
                 flex-wrap: wrap;
                 padding: 10px 0;
                 li {
-                    padding: 10px 10px 10px 0;
+                    padding: 10px 20px 10px 0;
                     a {
                         text-decoration: none;
                         @include styleText(#555555, $fs-1 - 1px, $fw-normal);

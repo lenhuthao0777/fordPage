@@ -1,0 +1,66 @@
+.something{
+    margin: 20px 0;
+    text-align: center;
+    .something__header{
+        margin: 30px 0;
+        h2{
+            @include styleText($color-black-1,$fs-4 + 2px, $fw-bold-0 - 200);
+            margin: 20px 0 10px 0;
+        }
+        p{
+            @include styleText($color-black-1, $fs-0, $fw-normal);
+            padding: 2px 0;
+        }
+        .something__btn{
+            margin-top: 60px;
+            a{
+                text-decoration: none;
+                &.exp-btn{
+                    padding: 15px 100px;
+                }
+            }
+        }
+    }
+    .general{
+        .general__img{
+          img{
+              width: 100%;
+            }
+            .generalImg2{
+                display: none;
+            }
+        }
+    }
+}
+@include responesive("medium"){
+    .something{
+        .something__header{
+            h2{
+                font-size: 36px;
+            }
+        }
+        .general{
+            .general__img{
+                .generalImg1{
+                    display: none;
+                }
+                .generalImg2{
+                    display: block;
+                }
+            }
+        }
+    } 
+}
+@include responesive("small"){
+
+    .something{
+        .something__header{
+            h2{
+                font-size: 24px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+    } 
+}

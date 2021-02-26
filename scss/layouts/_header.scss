@@ -1,5 +1,5 @@
 .container {
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 .header {
@@ -179,6 +179,7 @@
             display: none;
         }
         .navbar__bottom {
+            height: 70px;
             padding: 0 30px;
             display: flex;
             justify-content: space-between;
@@ -193,7 +194,7 @@
             .navbar__mobile {
                 display: block;
                 position: fixed;
-                top: 83px;
+                top: 70px;
                 right: 0;
                 width: 100%;
                 height: 100vh;
