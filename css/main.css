@@ -368,7 +368,7 @@ table {
   font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .navbar .navbar__top .navbar__top--link:hover {
@@ -392,7 +392,7 @@ table {
   font-size: 20px;
   color: #242424;
   padding-right: 5px;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .navbar .navbar__top .navbar__top--location:hover i {
@@ -461,7 +461,7 @@ table {
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .navbar .navbar__bottom .navbar__bottom--menu .navbar__bottom--menu-right__list .navbar__bottom--menu-right__item .navbar__bottom--menu-right__link i {
@@ -520,6 +520,25 @@ table {
   display: none;
 }
 
+@media screen and (max-width: 1024px) {
+  .navbar .navbar__top {
+    padding: 0 45px;
+  }
+  .navbar .navbar__bottom {
+    padding: 0 45px;
+  }
+  .navbar .navbar__bottom .navbar__bottom--menu .navbar__bottom--menu-left__list .navbar__bottom--menu-left__item .navbar__bottom--menu-left__link {
+    padding: 10px 6px;
+  }
+  .navbar .navbar__bottom .navbar__bottom--menu .navbar__bottom--menu-right__list .navbar__bottom--menu-right__item .navbar__bottom--menu-right__link {
+    padding: 10px 6px;
+    font-size: 12px;
+  }
+  .navbar .navbar__bottom .navbar__bottom--menu .navbar__bottom--menu-right__list .navbar__bottom--menu-right__item .navbar__bottom--menu-right__link .nav-tablet {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .navbar .navbar__top {
     display: none;
@@ -540,14 +559,14 @@ table {
   .navbar .navbar__bottom .navbar__mobile {
     display: block;
     position: fixed;
-    top: 83px;
+    top: 80px;
     right: 0;
     width: 100%;
     height: 100vh;
     background: #f3f3f3;
     transform: translateX(100%);
     opacity: 0;
-    transition: all .3s;
+    transition: all 0.3s;
   }
   .navbar .navbar__bottom .navbar__mobile .navbar__mobile--list .navbar__mobile--item {
     padding: 18px 30px;
@@ -658,6 +677,70 @@ table {
   }
   .fordCarousel .fordCarousel__content .item .text a h1 {
     font-size: 2rem;
+  }
+}
+
+.something {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.something .something__header {
+  margin: 30px 0;
+}
+
+.something .something__header h2 {
+  color: #242424;
+  font-size: 42px;
+  font-weight: 400;
+  margin: 20px 0 10px 0;
+}
+
+.something .something__header p {
+  color: #242424;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 2px 0;
+}
+
+.something .something__header .something__btn {
+  margin-top: 60px;
+}
+
+.something .something__header .something__btn a {
+  text-decoration: none;
+}
+
+.something .something__header .something__btn a.exp-btn {
+  padding: 15px 100px;
+}
+
+.something .general .general__img img {
+  width: 100%;
+}
+
+.something .general .general__img .generalImg2 {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .something .something__header h2 {
+    font-size: 36px;
+  }
+  .something .general .general__img .generalImg1 {
+    display: none;
+  }
+  .something .general .general__img .generalImg2 {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .something .something__header h2 {
+    font-size: 24px;
+  }
+  .something .something__header p {
+    font-size: 15px;
   }
 }
 
@@ -1413,6 +1496,21 @@ table {
 
 .footer .footer__tertiary .logo--ford-mobile {
   display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer .footer__search {
+    padding: 35px 45px;
+  }
+  .footer .footer__brand {
+    padding: 0 45px;
+  }
+  .footer .footer__secondary {
+    padding: 30px 45px;
+  }
+  .footer .footer__tertiary {
+    padding: 25px 45px 50px 45px;
+  }
 }
 
 @media screen and (max-width: 768px) {

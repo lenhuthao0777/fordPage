@@ -302,7 +302,21 @@
 }
 
 // responesive
-@include responesive("extra-large") {
+@include responesive("tablet-horizontal") {
+    .footer{
+        .footer__search{
+            padding: 35px 45px;
+        }
+        .footer__brand{
+            padding: 0 45px;
+        }
+        .footer__secondary{
+            padding: 30px 45px;
+        }
+        .footer__tertiary{
+            padding: 25px 45px 50px 45px;
+        }
+    }
 }
 @include responesive("medium") {
     .footer {

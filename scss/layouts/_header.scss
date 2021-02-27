@@ -48,7 +48,7 @@
             align-items: center;
             @include styleText($color-blue-dark, $fs-0 - 4px, $fw-bold-0 - 100);
             text-transform: uppercase;
-            transition: all .2s;
+            transition: all 0.2s;
             &:hover {
                 color: $color-blue-1;
             }
@@ -66,9 +66,9 @@
                 font-size: 20px;
                 color: $color-black-1;
                 padding-right: 5px;
-                transition: all .2s;
+                transition: all 0.2s;
             }
-            &:hover i{
+            &:hover i {
                 color: $color-blue-1;
             }
         }
@@ -101,7 +101,7 @@
                         text-decoration: none;
                         @include styleText($color-blue, $fs-1, $fw-bold-0 - 100);
                         text-transform: uppercase;
-                        &:hover{
+                        &:hover {
                             color: $color-blue-dark;
                         }
                     }
@@ -120,8 +120,8 @@
                         text-decoration: none;
                         @include styleText($color-blue, $fs-1, $fw-bold-0 - 200);
                         text-transform: uppercase;
-                        transition: all .2s;
-                        &:hover{
+                        transition: all 0.2s;
+                        &:hover {
                             color: $color-blue-dark;
                         }
                     }
@@ -171,7 +171,35 @@
     }
 }
 // responesive
-@include responesive("extra-large") {
+@include responesive("tablet-horizontal") {
+    .navbar {
+        .navbar__top {
+            padding: 0 45px;
+        }
+        .navbar__bottom {
+            padding: 0 45px;
+            .navbar__bottom--menu {
+                .navbar__bottom--menu-left__list {
+                    .navbar__bottom--menu-left__item {
+                        .navbar__bottom--menu-left__link {
+                            padding: 10px 6px;
+                        }
+                    }
+                }
+                .navbar__bottom--menu-right__list {
+                    .navbar__bottom--menu-right__item {
+                        .navbar__bottom--menu-right__link {
+                            padding: 10px 6px;
+                            .nav-tablet{
+                                display: none;
+                            }
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @include responesive("medium") {
     .navbar {
@@ -193,14 +221,14 @@
             .navbar__mobile {
                 display: block;
                 position: fixed;
-                top: 83px;
+                top: 80px;
                 right: 0;
                 width: 100%;
                 height: 100vh;
                 background: $color-white-cream;
                 transform: translateX(100%);
                 opacity: 0;
-                transition: all .3s;
+                transition: all 0.3s;
                 .navbar__mobile--list {
                     .navbar__mobile--item {
                         padding: 18px 30px;
