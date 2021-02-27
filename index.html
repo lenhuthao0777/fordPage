@@ -876,6 +876,7 @@
     <script>
       $(window).resize(function(){
         reSizeWidown();
+        isNeedScrollBtn();
       });
     </script>
     <!-- Hàm xác định hướng scroll bằng cách so sánh với giá trị scrollTop trước đó với giá trị scrollTop hiện tại -->
@@ -889,7 +890,8 @@
         addDisplayBlock_To_BackToTop()
       }
       lastScrollTop = currentScollTop;
-});
+      });
+
     </script>
     <script src="./js/viewButton.js"></script>
     <script src="./js/scrollIndicatorBtn.js"></script>
