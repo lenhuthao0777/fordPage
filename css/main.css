@@ -143,6 +143,10 @@ table {
   margin: 0 auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .slick-arrow {
   z-index: 5;
   width: auto;
@@ -189,7 +193,13 @@ table {
 }
 
 .slick-dots {
-  bottom: 12%;
+  bottom: 5%;
+  background-color: #000;
+  width: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 15px;
+  background-clip: padding-box;
 }
 
 .slick-dots li button::before {
@@ -198,8 +208,11 @@ table {
   height: 8px;
   border-radius: 50%;
   background-color: #fff;
-  transition: .4s;
+  transition: 0.4s;
   opacity: 1;
+  position: absolute;
+  left: 40%;
+  top: 20%;
 }
 
 .slick-dots li button:hover::before {
@@ -304,7 +317,7 @@ table {
   color: white;
   height: 1.5em;
   width: 1.5em;
-  line-height: 1.4em;
+  line-height: 1.5em;
   border-radius: 50%;
   border: 1px solid white;
   text-align: center;
@@ -313,6 +326,47 @@ table {
 .btnAngleRight:hover {
   background-color: white;
   color: #0276b3;
+}
+
+.scrollIndicatorBtn {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 50%;
+  bottom: 10px;
+  width: 65px;
+  height: 65px;
+  margin: 0 0 0 -33px;
+  padding: 10px;
+  cursor: pointer;
+  background: url(.././images/scroll-indicator.png) center center no-repeat;
+}
+
+.backToTop {
+  display: none;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+}
+
+.backToTop span {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backToTop span i {
+  color: white;
+  font-size: 24px;
+}
+
+.backToTop:hover {
+  opacity: 0.5;
 }
 
 .container {
@@ -612,12 +666,69 @@ table {
   display: none;
 }
 
+.fordCarousel .fordCarousel__content .item .info {
+  position: absolute;
+  top: 0;
+  padding: 40px 45px;
+}
+
+.fordCarousel .fordCarousel__content .item .info h2 {
+  color: #fff;
+  font-size: 42px;
+  font-weight: 400;
+}
+
+.fordCarousel .fordCarousel__content .item .info .info-link {
+  padding-top: 20px;
+}
+
+.fordCarousel .fordCarousel__content .item .info .info-link a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.fordCarousel .fordCarousel__content .item .info .info-link a p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: normal;
+  padding-right: 20px;
+}
+
+.fordCarousel .fordCarousel__content .item .info .info-link a span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.fordCarousel .fordCarousel__content .item .info .info-link a span i {
+  font-size: 14px;
+  color: #fff;
+}
+
+.fordCarousel .fordCarousel__content .item .info .info-link:hover a p {
+  color: #102b4e;
+}
+
+.fordCarousel .fordCarousel__content .item .info .info-link:hover a span {
+  background: #102b4e;
+  border-color: #102b4e;
+}
+
+.fordCarousel .fordCarousel__content .item .info .info-link:hover a span i {
+  color: #545352;
+}
+
 .fordCarousel .fordCarousel__content .item .text a {
   width: 90%;
   height: 84%;
   position: absolute;
   top: 8%;
-  left: 5%;
+  left: 45px;
   text-decoration: none;
   color: #fff;
 }
@@ -647,6 +758,13 @@ table {
   .fordCarousel .fordCarousel__content .item .text a h1 {
     font-size: 2.4rem;
   }
+  .fordCarousel .fordCarousel__content .item .info h2 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+  }
+  .fordCarousel .fordCarousel__content .item .info .info-link {
+    margin-top: 1rem;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -658,6 +776,74 @@ table {
   }
   .fordCarousel .fordCarousel__content .item .text a h1 {
     font-size: 2rem;
+  }
+  .fordCarousel .fordCarousel__content .item .info {
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+
+.something {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.something .something__header {
+  margin: 30px 0;
+}
+
+.something .something__header h2 {
+  color: #242424;
+  font-size: 42px;
+  font-weight: 400;
+  margin: 20px 0 10px 0;
+}
+
+.something .something__header p {
+  color: #242424;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 2px 0;
+}
+
+.something .something__header .something__btn {
+  margin-top: 60px;
+}
+
+.something .something__header .something__btn a {
+  text-decoration: none;
+}
+
+.something .something__header .something__btn a.exp-btn {
+  padding: 15px 100px;
+}
+
+.something .general .general__img img {
+  width: 100%;
+}
+
+.something .general .general__img .generalImg2 {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .something .something__header h2 {
+    font-size: 36px;
+  }
+  .something .general .general__img .generalImg1 {
+    display: none;
+  }
+  .something .general .general__img .generalImg2 {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .something .something__header h2 {
+    font-size: 24px;
+  }
+  .something .something__header p {
+    font-size: 15px;
   }
 }
 
@@ -914,7 +1100,7 @@ table {
 }
 
 .fordGallery .fordGallery__content .item:nth-child(1) .letter h1 {
-  color: #d92e14;
+  color: #626466;
   font-size: 2rem;
   font-weight: 300;
 }

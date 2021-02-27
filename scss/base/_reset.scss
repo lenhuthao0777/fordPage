@@ -142,3 +142,7 @@ table {
     max-width: 1440px;
     margin: 0 auto;
 }
+// Tạo hiệu ứng scroll mượt 
+html {
+    scroll-behavior: smooth;
+}

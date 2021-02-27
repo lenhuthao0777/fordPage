@@ -36,12 +36,50 @@
     color: white;
     height: 1.5em;
     width: 1.5em;
-    line-height: 1.4em;
+    line-height: 1.5em;
     border-radius: 50%;
     border: 1px solid white;
     text-align: center;
     &:hover {
         background-color: white;
         color: $color-blue;
+    }
+}
+
+.scrollIndicatorBtn {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 50%;
+    bottom: 10px;
+    width: 65px;
+    height: 65px;
+    margin: 0 0 0 -33px;
+    padding: 10px;
+    cursor: pointer;
+    background: url(.././images/scroll-indicator.png) center center no-repeat;
+}
+
+.backToTop {
+    display: none;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    span {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $color-black-0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i {
+            color: white;
+            font-size: $fs-3;
+        }
+    }
+    &:hover {
+        opacity: 0.5;
     }
 }

@@ -8,7 +8,6 @@
 
 // base
 @import "./base/reset";
-@import "./base/customize";
 @import "./base/normalized";
 
 // component
@@ -17,12 +16,12 @@
 // layout
 @import "./layouts/header";
 @import "./layouts/carousel";
+@import "./layouts/something";
 @import "./layouts/video";
 @import "./layouts/offers";
 @import "./layouts/gallery";
 @import "./layouts/recalls";
 @import "./layouts/footer";
-@import "./layouts/banner";
 
 // pages
 

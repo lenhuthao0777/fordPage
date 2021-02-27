@@ -79,7 +79,7 @@
             .letter {
                 text-align: center;
                 h1 {
-                    @include styleText($color-red, 2rem, 300);
+                    @include styleText(#626466, 2rem, 300);
                 }
                 p {
                     margin-top: 2rem;

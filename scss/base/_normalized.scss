@@ -5,8 +5,8 @@
 
     i {
         font-size: 2.5rem;
-        background-color: rgba(85,85,85,0.8);
-        color:$color-white-0;
+        background-color: rgba(85, 85, 85, 0.8);
+        color: $color-white-0;
         width: 55px;
         height: 62px;
         display: flex;
@@ -38,7 +38,13 @@
     display: none;
 }
 .slick-dots {
-    bottom: 12%;
+    bottom: 5%;
+    background-color: #000;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 15px;
+    background-clip: padding-box;
     li {
         button {
             &::before {
@@ -47,20 +53,23 @@
                 height: 8px;
                 border-radius: 50%;
                 background-color: $color-white-0;
-                transition: .4s;
+                transition: 0.4s;
                 opacity: 1;
+                position: absolute;
+                left: 40%;
+                top: 20%;
             }
             &:hover::before {
-                    transform: scale(1.5);
+                transform: scale(1.5);
             }
-        } 
+        }
     }
     .slick-active {
         button {
             &::before {
                 transform: scale(1.5);
                 border: 1px solid $color-white-0;
-                background-color: transparent;  
+                background-color: transparent;
             }
         }
     }

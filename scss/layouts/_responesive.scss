@@ -1,2 +1,7 @@
 // responesive ca web
 // ca body, font chu
+@include responesive("extra-large"){
+    .scrollIndicatorBtn {
+        display: block;
+    }
+}
