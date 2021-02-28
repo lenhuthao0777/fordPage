@@ -90,3 +90,15 @@ menuMb5.addEventListener("click", ()=>{
     iTemMb2.classList.remove("open");
     noneBorder.style.border = "none";
 })
+
+
+
+const viewBtn = document.querySelector(".view-btn");
+const viewAll = document.querySelector(".view-all");
+const viewLess = document.querySelector(".view-less");
+const glMobile = document.querySelector(".gallery__mobile");
+
+viewBtn.addEventListener("click", ()=>{
+    viewBtn.classList.toggle("open");
+    glMobile.classList.toggle("open");
+})

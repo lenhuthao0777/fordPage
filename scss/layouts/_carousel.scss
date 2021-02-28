@@ -12,24 +12,41 @@
                 }
             }
             .text {
+                position: absolute;
+                top: 10%;
+                left: 0%;
+                padding: 0 95px;
+                h1 {
+                    @include styleText($color-white-0, $fs-4 + 2px, $fw-bold-0 - 200);
+                    margin-bottom: $mg-2;
+                }
                 a {
-                    width: 90%;
-                    height: 84%;
-                    position: absolute;
-                    top:8%;
-                    left:5%;
                     text-decoration: none;
-                    color: $color-white-0;
-                    h1 {
-                        font-size: 3rem;
-                        margin-bottom: $mg-2;
+                    display: flex;
+                    align-items: center;
+                    p {
+                        @include styleText($color-white-0, $fs-0, $fw-normal);
+                        padding-right: 20px;
                     }
-                    i {
-                        margin-left: $mg-2;
+                    span {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 25px;
+                        height: 25px;
+                        border: 1px solid #ffffff;
+                        border-radius: 50%;
+                        transition: all 0.3s;
+                        i {
+                            color: #ffffff;
+                            font-size: 15px;
+                        }
                     }
                     &:hover {
-                        i {
+                        span {
                             background-color: $color-white-0;
+                        }
+                        i {
                             color: $color-gray-dark;
                         }
                     }
@@ -70,11 +87,28 @@
         .fordCarousel__content {
             .item {
                 .text {
+                    h1 {
+                        font-size: 2rem;
+                    }
                     a {
                         text-align: center;
-                        h1 {
-                            font-size: 2rem;
-                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include responesive("small") {
+    .fordCarousel {
+        margin-top: 80px;
+        .fordCarousel__content {
+            .item {
+                .text {
+                    h1 {
+                        font-size: 24px;
+                    }
+                    a {
+                        text-align: center;
                     }
                 }
             }

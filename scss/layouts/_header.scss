@@ -276,5 +276,24 @@
         }
     }
 }
+@include responesive("mobile-horizontal") {
+    .navbar{
+        .navbar__bottom{
+            padding: 0 25px;
+            .navbar__mobile{
+                overflow-x: hidden;
+                overflow-y: auto;
+                height: calc(100% - 80px);
+            }
+        }
+    }
+}
 @include responesive("small") {
+    .navbar{
+        .navbar__bottom{
+            padding: 0 15px;
+            .navbar__mobile{
+            }
+        }
+    }
 }
