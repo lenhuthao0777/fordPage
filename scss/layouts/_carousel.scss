@@ -11,77 +11,47 @@
                     display: none;
                 }
             }
-            .info {
+            .text {
                 position: absolute;
-                top: 0;
-                padding: 40px 45px;
-                h2 {
+                top: 10%;
+                left: 0%;
+                padding: 0 95px;
+                h1 {
                     @include styleText($color-white-0, $fs-4 + 2px, $fw-bold-0 - 200);
+                    margin-bottom: $mg-2;
                 }
-                .info-link {
-                    padding-top: 20px;
-                    a {
+                a {
+                    text-decoration: none;
+                    display: flex;
+                    align-items: center;
+                    p {
+                        @include styleText($color-white-0, $fs-0, $fw-normal);
+                        padding-right: 20px;
+                    }
+                    span {
                         display: flex;
                         align-items: center;
-                        text-decoration: none;
-                        p {
-                            @include styleText($color-white-0, $fs-2, $fw-normal);
-                            padding-right: 20px;
-                            // transition: all .5s;
+                        justify-content: center;
+                        width: 25px;
+                        height: 25px;
+                        border: 1px solid #ffffff;
+                        border-radius: 50%;
+                        transition: all 0.3s;
+                        i {
+                            color: #ffffff;
+                            font-size: 15px;
                         }
-                        span {
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            width: 25px;
-                            height: 25px;
-                            border: 1px solid $color-white-0;
-                            border-radius: 50%;
-                            // transition: all .5s;
-                            i {
-                                font-size: 14px;
-                                color: $color-white-0;
-                                // transition: all .5s;
-                            }
-                        }
-                    }
-                    &:hover a p {
-                        color: $color-blue-dark;
-                    }
-                    &:hover a span {
-                        background: $color-blue-dark;
-                        border-color: $color-blue-dark;
-                    }
-                    &:hover a span i {
-                        color: $color-gray-dark;
-                    }
-                }
-            }
-            .text {
-                a {
-                    width: 90%;
-                    height: 84%;
-                    position: absolute;
-                    top:8%;
-                    left:45px;
-                    text-decoration: none;
-                    color: $color-white-0;
-                    h1 {
-                        font-size: 3rem;
-                        margin-bottom: $mg-2;
-                    }
-                    i {
-                        margin-left: $mg-2;
                     }
                     &:hover {
-                        i {
+                        span {
                             background-color: $color-white-0;
+                        }
+                        i {
                             color: $color-gray-dark;
                         }
                     }
                 }
             }
-
         }
     }
 }
@@ -106,15 +76,6 @@
                         }
                     }
                 }
-                .info {
-                    h2 {
-                        font-size: 2.4rem;
-                        margin-bottom: 2rem;
-                    }
-                    .info-link {
-                        margin-top: 1rem;
-                    }
-                }
             }
         }
     }
@@ -126,16 +87,29 @@
         .fordCarousel__content {
             .item {
                 .text {
+                    h1 {
+                        font-size: 2rem;
+                    }
                     a {
                         text-align: center;
-                        h1 {
-                            font-size: 2rem;
-                        }
                     }
                 }
-                .info {
-                    text-align: center;
-                    font-size: 2rem;
+            }
+        }
+    }
+}
+@include responesive("small") {
+    .fordCarousel {
+        margin-top: 80px;
+        .fordCarousel__content {
+            .item {
+                .text {
+                    h1 {
+                        font-size: 24px;
+                    }
+                    a {
+                        text-align: center;
+                    }
                 }
             }
         }

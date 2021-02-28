@@ -1,6 +1,6 @@
 // variable color
 $color-black-0: #333333; // default
-$color-black-1: #242424; 
+$color-black-1: #242424;
 $color-white-0: #fff; //default
 $color-white-cream: #f3f3f3;
 $color-black-light: #6c6466;
@@ -8,11 +8,11 @@ $color-blue: #0276b3;
 $color-blue-1: #2861a4;
 $color-blue-2: #204d74;
 $color-blue-dark: #102b4e;
-$color-blue-light:#37a9cf;
+$color-blue-light: #37a9cf;
 $color-gray-dark: #545352;
 $color-gray: #a7a7a7;
 $color-red: #d92e14;
-$color-trans:transparent;
+$color-trans: transparent;
 
 // variable font-size
 $fs-0: 16px; //default
@@ -36,10 +36,8 @@ $pd-1: 10px;
 $pd-2: 15px;
 $pd-3: 20px;
 
-
 //variable line-height
 $line-height-0: 1.43; //default
-
 
 //variable font-weight
 $fw-normal: normal;
@@ -47,11 +45,12 @@ $fw-bold-0: 600;
 $fw-bold-1: 700;
 $fw-bold: bold;
 
-
 //break points
-$breakpoints:(
-    'extra-large': 1200px,
-    'large' : 992px,
-    'medium' : 768px,
-    'small' : 576px, 
-)
+$breakpoints: (
+    "extra-large": 1200px,
+    "tablet-horizontal": 1024px,
+    "large": 992px,
+    "medium": 768px,
+    "mobile-horizontal": 736px,
+    "small": 576px,
+);
