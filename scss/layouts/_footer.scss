@@ -481,6 +481,9 @@
     .footer {
         .footer__search {
             padding: 35px 25px;
+            .footer__search--form{
+                display: none;
+            }
         }
         .footer__brand {
             padding: 0 25px;

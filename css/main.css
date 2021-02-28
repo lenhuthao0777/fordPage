@@ -2382,6 +2382,9 @@ table {
   .footer .footer__search {
     padding: 35px 25px;
   }
+  .footer .footer__search .footer__search--form {
+    display: none;
+  }
   .footer .footer__brand {
     padding: 0 25px;
   }
