@@ -6,23 +6,18 @@ const disclosuresBtn = document.querySelector(".disclosures-btn");
 const footerPolicy = document.querySelector(".footer__policy");
 const disclosuresIcon = document.querySelector("#icon");
 
-
 const iTem1 = document.querySelector("#item1");
 const iTem2 = document.querySelector("#item2");
 const iTem3 = document.querySelector("#item3");
-
 
 const menu1 = document.querySelector("#menu1");
 const menu2 = document.querySelector("#menu2");
 const menu3 = document.querySelector("#menu3");
 
-
-
 const iTemMb2 = document.querySelector("#item-mb2");
 const iTemMb3 = document.querySelector("#item-mb3");
 const iTemMb4 = document.querySelector("#item-mb4");
 const iTemMb5 = document.querySelector("#item-mb5");
-
 
 const menuMb2 = document.querySelector("#menu-mb2");
 const menuMb3 = document.querySelector("#menu-mb3");
@@ -31,74 +26,85 @@ const menuMb5 = document.querySelector("#menu-mb5");
 
 const noneBorder = document.querySelector(".none-border");
 
-menuIcon.addEventListener("click", ()=>{
+menuIcon.addEventListener("click", () => {
     menuIcon.classList.toggle("open");
     hamburgerBtn.classList.toggle("change");
     navMobile.classList.toggle("open");
-})
+});
 
-disclosuresBtn.addEventListener("click", ()=>{
+disclosuresBtn.addEventListener("click", () => {
     footerPolicy.classList.toggle("open");
     disclosuresIcon.classList.toggle("disclosures-icon-up");
-})
+});
 
-
-
-
-menu1.addEventListener("click", ()=>{
+menu1.addEventListener("click", () => {
     iTem1.classList.toggle("open");
     iTem2.classList.remove("open");
     iTem3.classList.remove("open");
-})
-menu2.addEventListener("click", ()=>{
+});
+menu2.addEventListener("click", () => {
     iTem2.classList.toggle("open");
     iTem1.classList.remove("open");
     iTem3.classList.remove("open");
-})
-menu3.addEventListener("click", ()=>{
+});
+menu3.addEventListener("click", () => {
     iTem3.classList.toggle("open");
     iTem2.classList.remove("open");
     iTem1.classList.remove("open");
-})
+});
 
-
-
-
-
-menuMb2.addEventListener("click", ()=>{
+menuMb2.addEventListener("click", () => {
     iTemMb2.classList.toggle("open");
     iTemMb3.classList.remove("open");
     iTemMb4.classList.remove("open");
     iTemMb5.classList.remove("open");
-})
-menuMb3.addEventListener("click", ()=>{
+});
+menuMb3.addEventListener("click", () => {
     iTemMb3.classList.toggle("open");
     iTemMb2.classList.remove("open");
     iTemMb4.classList.remove("open");
     iTemMb5.classList.remove("open");
-})
-menuMb4.addEventListener("click", ()=>{
+});
+menuMb4.addEventListener("click", () => {
     iTemMb4.classList.toggle("open");
     iTemMb3.classList.remove("open");
     iTemMb2.classList.remove("open");
     iTemMb5.classList.remove("open");
-})
-menuMb5.addEventListener("click", ()=>{
+});
+menuMb5.addEventListener("click", () => {
     iTemMb5.classList.toggle("open");
     iTemMb3.classList.remove("open");
     iTemMb4.classList.remove("open");
     iTemMb2.classList.remove("open");
     noneBorder.style.border = "none";
-})
-
-
+});
 
 const viewBtn = document.querySelector(".view-btn");
 const viewAll = document.querySelector(".view-all");
 const viewLess = document.querySelector(".view-less");
 const glMobile = document.querySelector(".gallery__mobile");
 
-viewBtn.addEventListener("click", ()=>{
+viewBtn.addEventListener("click", () => {
     viewBtn.classList.toggle("open");
     glMobile.classList.toggle("open");
+});
+
+
+
+const toTop = document.querySelector(".to-top");
+const toTopBtn = document.querySelector(".to-top-btn");
+
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 100) {
+        toTop.classList.add("active");
+    } else {
+        toTop.classList.remove("active");
+    }
+});
+
+toTopBtn.addEventListener("click",()=>{
+    window.scroll({
+        top: 0,
+        behavior: "smooth",
+    })
 })

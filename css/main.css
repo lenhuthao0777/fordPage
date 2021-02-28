@@ -113,6 +113,7 @@ body {
   font-size: 16px;
   color: #000;
   background-color: #fff;
+  scroll-behavior: smooth;
 }
 
 ol,
@@ -2491,6 +2492,50 @@ table {
   }
   .footer .footer__tertiary .logo--ford-mobile img {
     width: 93px;
+  }
+}
+
+.to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 32px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+
+.to-top .to-top-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+}
+
+.to-top .to-top-btn i {
+  font-size: 20px;
+  color: #fff;
+}
+
+.to-top.active {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+@media screen and (max-width: 576px) {
+  .to-top .to-top-btn {
+    width: 30px;
+    height: 30px;
+  }
+  .to-top .to-top-btn i {
+    font-size: 15px;
+  }
+  .to-top.active {
+    bottom: 20px;
+    right: 20px;
   }
 }
 /*# sourceMappingURL=main.css.map */
